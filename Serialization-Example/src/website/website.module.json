@@ -1,0 +1,15 @@
+{
+  "namespace": "Feature.PageContent",
+  "items": {
+    "includes": [
+      {
+        "name": "Templates",
+        "path": "/sitecore/templates/Feature/PageContent"
+      },
+	  {
+        "name": "Content",
+        "path": "/sitecore/content/Home/Car"
+      }
+    ]
+  }
+}

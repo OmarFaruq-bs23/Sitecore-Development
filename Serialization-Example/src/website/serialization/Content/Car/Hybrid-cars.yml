@@ -1,0 +1,58 @@
+﻿---
+ID: "95f168fa-997a-474b-b5b1-ca453969f619"
+Parent: "33af2b3f-f388-44bb-845e-fa88eada4a17"
+Template: "e7d68a17-a9d3-498a-8552-07a0534058b9"
+Path: "/sitecore/content/Home/Car/Hybrid-cars"
+SharedFields:
+- ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
+  Hint: __Tracking
+  Value: |
+    <tracking>
+      <profile
+        id="012d16f7-2b0a-4572-a380-a53e4be8a9fa"
+        name="Car Type Interest"
+        presets="environmentalist|100||">
+        <key
+          name="Hybrid cars"
+          value="10" />
+        <key
+          name="Luxury cars"
+          value="0" />
+        <key
+          name="Performance Cars"
+          value="0" />
+      </profile>
+    </tracking>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1cd26e25-ed50-488e-870e-f6e90fb442c5"
+      Hint: Image1
+      Value: |
+        <image mediaid="{09DBD243-D7F3-4909-94D8-88D3E15FEB1E}" alt="Hybrid" height="" width="" hspace="" vspace="" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220629T100654Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b23e7dad-f893-4dc3-b1c7-1bd80d16062f"
+    - ID: "9fe409ef-21f6-42ef-b71a-64414ca56a0f"
+      Hint: Image2
+      Value: |
+        <image mediaid="{7ACBC6C0-F44D-40FB-91A3-53EE12B5C2F3}" />
+    - ID: "abd67979-7228-4939-9c09-41bf2e4de1c0"
+      Hint: Body Copy
+      Value: |
+        <strong>Hybrid Cars</strong>
+        <div id="gtx-trans" style="position: absolute; left: -46px; top: -25px;">
+        <div class="gtx-trans-icon">&nbsp;</div>
+        </div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220706T112902Z

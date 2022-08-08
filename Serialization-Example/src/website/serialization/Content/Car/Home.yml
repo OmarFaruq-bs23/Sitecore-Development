@@ -1,0 +1,121 @@
+﻿---
+ID: "846bccbd-bd2a-45ba-98a9-3f096c8c1de7"
+Parent: "33af2b3f-f388-44bb-845e-fa88eada4a17"
+Template: "e7d68a17-a9d3-498a-8552-07a0534058b9"
+Path: /sitecore/content/Home/Car/Home
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{8774432B-B210-40A1-8B13-5EA4AE67C51C}"
+              s:pt="{AAA6EAD3-3FD8-410C-8D38-E33D975E9D78}"
+              s:uid="{8774432B-B210-40A1-8B13-5EA4AE67C51C}">
+              <rls>
+                <ruleset
+                  s:pet="true">
+                  <rule
+                    uid="{9DA0D9CD-C0A7-463D-A584-987B9725E2A0}"
+                    s:name="Environmentalist"
+                    s:test="true">
+                    <conditions>
+                      <condition
+                        uid="1669C525276D481091D808C0ECE47A5E"
+                        s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
+                        s:ProfileName="Car Type Interest"
+                        s:PatternName="Environmentalist" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="250D1A8A5B23420FBADA4F9A549DF0B3"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{95F168FA-997A-474B-B5B1-CA453969F619}" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{7E7DB032-4719-46E2-9DFA-736356DE129B}"
+                    s:name="Luxury"
+                    s:test="true">
+                    <conditions>
+                      <condition
+                        uid="C4C65DD84B8048C99D1EDBEB5DD10A1B"
+                        s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
+                        s:ProfileName="Car Type Interest"
+                        s:PatternName="For the Family" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="F82D7BE2C5CC426E8F741F93C0ED1C66"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{679D5FC3-A692-4931-9756-DB757D85B885}" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{D4E0FBBC-12D2-429B-83A1-3DB34E3FFFCA}"
+                    s:name="Performance"
+                    s:test="true">
+                    <conditions>
+                      <condition
+                        uid="9E47318E61A24F43AA80203BCEEF550A"
+                        s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
+                        s:ProfileName="Car Type Interest"
+                        s:PatternName="Petrol Head" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="97AFD230E9CC434C9BA2B9055F26354F"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{5B881C59-8756-4B5E-AE65-44CBED636667}" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default"
+                    s:test="true">
+                    <conditions>
+                      <condition
+                        uid="1EEE67087DB643B28D39DEE6EB182D15"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                    <actions />
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+          </d>
+        </r>
+    - ID: "1cd26e25-ed50-488e-870e-f6e90fb442c5"
+      Hint: Image1
+      Value: |
+        <image mediaid="{08B517E0-329F-4CF9-8585-0CCC8B5DC16B}" alt="car1" height="" width="" hspace="" vspace="" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220629T100654Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f1512e42-6712-4c34-ae39-a63b9728c5b0"
+    - ID: "9fe409ef-21f6-42ef-b71a-64414ca56a0f"
+      Hint: Image2
+      Value: |
+        <image mediaid="{FF731AC8-68AF-4B4D-AE29-3F9865DC5EB4}" alt="car2" height="" width="" hspace="" vspace="" />
+    - ID: "abd67979-7228-4939-9c09-41bf2e4de1c0"
+      Hint: Body Copy
+      Value: <strong>Welcome to Car House (Updated)</strong>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220722T061113Z

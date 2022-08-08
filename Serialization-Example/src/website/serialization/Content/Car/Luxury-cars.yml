@@ -1,0 +1,58 @@
+﻿---
+ID: "679d5fc3-a692-4931-9756-db757d85b885"
+Parent: "33af2b3f-f388-44bb-845e-fa88eada4a17"
+Template: "e7d68a17-a9d3-498a-8552-07a0534058b9"
+Path: "/sitecore/content/Home/Car/Luxury-cars"
+SharedFields:
+- ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
+  Hint: __Tracking
+  Value: |
+    <tracking>
+      <profile
+        id="012d16f7-2b0a-4572-a380-a53e4be8a9fa"
+        name="Car Type Interest"
+        presets="for the family|100||">
+        <key
+          name="Hybrid cars"
+          value="0" />
+        <key
+          name="Luxury cars"
+          value="10" />
+        <key
+          name="Performance Cars"
+          value="0" />
+      </profile>
+    </tracking>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1cd26e25-ed50-488e-870e-f6e90fb442c5"
+      Hint: Image1
+      Value: |
+        <image mediaid="{B3C71E24-B53D-4A87-8C21-CCFEA976B13C}" alt="" height="" width="" hspace="" vspace="" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220629T100654Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "07bfe6f7-6a09-4b6b-9ee4-596197401959"
+    - ID: "9fe409ef-21f6-42ef-b71a-64414ca56a0f"
+      Hint: Image2
+      Value: |
+        <image mediaid="{5C389F32-7D55-4EA5-9E0C-F102D8AB895F}" alt="" height="" width="" hspace="" vspace="" />
+    - ID: "abd67979-7228-4939-9c09-41bf2e4de1c0"
+      Hint: Body Copy
+      Value: |
+        <strong>Luxury Cars</strong>
+        <div id="gtx-trans" style="position: absolute; left: -25px; top: -25px;">
+        <div class="gtx-trans-icon">&nbsp;</div>
+        </div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220706T112933Z

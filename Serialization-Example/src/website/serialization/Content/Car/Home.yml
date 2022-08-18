@@ -98,13 +98,13 @@ Languages:
     - ID: "1cd26e25-ed50-488e-870e-f6e90fb442c5"
       Hint: Image1
       Value: |
-        <image mediaid="{08B517E0-329F-4CF9-8585-0CCC8B5DC16B}" alt="car1" height="" width="" hspace="" vspace="" />
+        <image mediaid="{B3C71E24-B53D-4A87-8C21-CCFEA976B13C}" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20220629T100654Z
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "f1512e42-6712-4c34-ae39-a63b9728c5b0"
+      Value: "537482a7-30d6-4c70-b2a5-bfd56fe38a1b"
     - ID: "9fe409ef-21f6-42ef-b71a-64414ca56a0f"
       Hint: Image2
       Value: |
@@ -118,4 +118,4 @@ Languages:
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20220722T061113Z
+      Value: 20220810T125857Z

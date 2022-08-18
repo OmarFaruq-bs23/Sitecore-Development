@@ -9,7 +9,12 @@
 	  {
         "name": "Content",
         "path": "/sitecore/content/Home/Car"
-      }
+      },
+	  {
+		"name": "Our Sites Launchpad Button",
+        "path": "/sitecore/client/Applications/Launchpad/PageSettings/Buttons/Our Sites",
+		"database":"core"
+	  }
     ]
   }
 }

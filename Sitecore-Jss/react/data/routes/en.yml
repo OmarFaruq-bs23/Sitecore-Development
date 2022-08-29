@@ -31,9 +31,13 @@ placeholders:
       # fields:
       #   heading: Welcome to My Forgot Password page
 
-    - componentName: Dashboard
+    # - componentName: Dashboard
+    #     fields:
+    #       heading: Welcome to My Inbox page
+
+    - componentName: Inbox
       fields:
-        heading: Welcome to My Dashboard page
+        heading: Welcome to My First Component Text
 
     # - componentName: MyFirstComponent
     #   fields:

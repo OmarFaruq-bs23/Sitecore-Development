@@ -20,9 +20,11 @@ fields:
 # root placeholder names are defined in the package.json config section (required for Sitecore deployment)
 placeholders:
   jss-main:
-    # - componentName: SignUp
+    - componentName: ForgotPassword
+      fields:
+        heading: Welcome to My Forgot Password page
 
-    - componentName: Registration
+    # - componentName: Registration
       # fields:
       #   heading: Welcome to My Registration page
 

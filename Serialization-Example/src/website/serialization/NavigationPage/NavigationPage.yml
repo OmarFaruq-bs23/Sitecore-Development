@@ -1,0 +1,31 @@
+﻿---
+ID: "57bf2092-6583-4ed2-b49e-0d9092e3430b"
+Parent: "4288077d-f242-4811-9810-59082c6dba62"
+Template: "69fcec09-412f-4780-ac36-690a08acb1ba"
+Path: /sitecore/content/Home/HubSpot/NavigationPage
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0a10be6a-623d-480f-98dc-38948ec866cf"
+      Hint: FirstLink
+      Value: |
+        <link text="Follow Linked" linktype="external" url="https://www.linkedin.com/feed/" anchor="" target="" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220824T062843Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "bf0c5d8d-9d9c-4cfa-b0c6-223a4a991980"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "cd28167e-5ba3-4064-b119-f1dcf4d498a8"
+      Hint: SecondLink
+      Value: |
+        <link text="Follow Linked" linktype="external" url="https://www.linkedin.com/feed/" anchor="" target="" />
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220824T063043Z

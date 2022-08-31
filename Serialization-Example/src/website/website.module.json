@@ -3,18 +3,27 @@
   "items": {
     "includes": [
       {
-        "name": "Templates",
-        "path": "/sitecore/templates/Feature/PageContent"
+        "name": "Our Sites Launchpad Button",
+            "path": "/sitecore/client/Applications/Launchpad/PageSettings/Buttons/Our Sites",
+        "database":"core"
+        },
+      {
+        "name":"NavigationLayout",
+        "path":"/sitecore/layout/Layouts/Project/_LayoutMain"
       },
-	  {
-        "name": "Content",
-        "path": "/sitecore/content/Home/Car"
-      },
-	  {
-		"name": "Our Sites Launchpad Button",
-        "path": "/sitecore/client/Applications/Launchpad/PageSettings/Buttons/Our Sites",
-		"database":"core"
-	  }
+	  
+    {
+      "name":"NavigationRendering",
+      "path":"/sitecore/layout/Renderings/Project/FoodHut"
+    },
+    {
+      "name":"NavigationPageTemplate",
+      "path":"/sitecore/templates/Project/HubSpot"
+    },
+    {
+      "name": "NavigationPage",
+      "path": "/sitecore/content/Home/HubSpot/NavigationPage"
+    }
     ]
   }
 }

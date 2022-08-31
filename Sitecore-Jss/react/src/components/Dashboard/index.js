@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text } from '@sitecore-jss/sitecore-jss-react';
+import { Link } from 'react-router-dom';
 import logo from './../../assets/img/logo.svg';
 import chart from './../../assets/img/chart.png';
 import profile from './../../assets/img/profile.png';

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text } from '@sitecore-jss/sitecore-jss-react';
+import { Link } from 'react-router-dom';
 import logo from './../../assets/img/logo.svg';
 
 const Login = (props) => (
@@ -41,16 +42,21 @@ const Login = (props) => (
             </div>
             <div>
               <span>
-                <a className="forgot-password" href="#">
+                <Link to="/forgotpassword" className="forgot-password">
                   Forgot password?
-                </a>
+                </Link>
+                {/* <a className="forgot-password" href="#">
+                Forgot password?
+                </a> */}
               </span>
               <br />
             </div>
           </div>
           <button>Sign In</button>
           <p>
-            Dont have an account? <a href="#">Sign Up</a>
+            Dont have an account?
+            <Link to="/registration">Sign UP</Link>
+            {/* <a href="#">Sign Up</a> */}
           </p>
         </form>
       </div>

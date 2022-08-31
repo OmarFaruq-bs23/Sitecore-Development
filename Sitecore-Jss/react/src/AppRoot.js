@@ -4,6 +4,10 @@ import { Route, Switch } from 'react-router-dom';
 import { ApolloProvider } from '@apollo/client';
 import componentFactory from './temp/componentFactory';
 import RouteHandler from './RouteHandler';
+import Dashboard from './components/Dashboard';
+import Registration from './components/Registration';
+import ForgotPassword from './components/ForgotPassword';
+import Inbox from './components/Inbox';
 
 // This is the main JSX entry point of the app invoked by the renderer (server or client rendering).
 // By default the app's normal rendering is delegated to <RouteHandler> that handles the loading of JSS route data.
@@ -37,6 +41,18 @@ class AppRoot extends React.Component {
               <Route path="/:lang([a-z]{2}-[A-Z]{2})/:sitecoreRoute*" render={this.renderRoute} />
               <Route path="/:lang([a-z]{2})/:sitecoreRoute*" render={this.renderRoute} />
               <Route path="/:sitecoreRoute*" render={this.renderRoute} />
+              <Route path="/registration">
+                <Registration />
+              </Route>
+              <Route path="/forgotpassword">
+                <ForgotPassword />
+              </Route>
+              <Route path="/dashboard">
+                <Dashboard />
+              </Route>
+              <Route path="/inbox">
+                <Inbox />
+              </Route>
             </Switch>
           </Router>
         </SitecoreContext>

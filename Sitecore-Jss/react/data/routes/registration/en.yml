@@ -1,0 +1,7 @@
+fields:
+  pageTitle: C R M - Registration
+placeholders:
+  jss-main:
+  - componentName: Registration
+    # fields:
+    #   heading: Using Login

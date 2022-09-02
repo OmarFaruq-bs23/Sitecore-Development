@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text } from '@sitecore-jss/sitecore-jss-react';
+import { Link } from 'react-router-dom';
 import logo from './../../assets/img/logo.svg';
 
 const ForgotPassword = (props) => (
@@ -8,7 +9,9 @@ const ForgotPassword = (props) => (
       <div className="login-signup">
         <div className="logo">
           <div className="logo-image">
-            <img src={logo} className="filter-blue" alt="logo" />
+            <Link to="/" className="ps-0">
+              <img src={logo} className="filter-blue" alt="logo" />
+            </Link>
           </div>
           <h1>CRM</h1>
         </div>
@@ -24,7 +27,9 @@ const ForgotPassword = (props) => (
             />
             <label className="pt-2">Email address</label>
           </div>
-          <button>Submit</button>
+          <Link to="/" className="ps-0">
+            <button>Submit</button>
+          </Link>
         </form>
       </div>
     </div>

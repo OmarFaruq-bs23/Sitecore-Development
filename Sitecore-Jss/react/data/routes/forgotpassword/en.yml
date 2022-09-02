@@ -1,0 +1,7 @@
+fields:
+  pageTitle: C R M - Forgot Password
+placeholders:
+  jss-main:
+  - componentName: ForgotPassword
+    # fields:
+    #   heading: Using Login

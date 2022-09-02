@@ -1,0 +1,7 @@
+fields:
+  pageTitle: C R M - Inbox
+placeholders:
+  jss-main:
+  - componentName: Inbox
+    # fields:
+    #   heading: Using Login

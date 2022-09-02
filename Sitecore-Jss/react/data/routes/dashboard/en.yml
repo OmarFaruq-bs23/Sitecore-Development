@@ -1,0 +1,7 @@
+fields:
+  pageTitle: C R M - Dashboard
+placeholders:
+  jss-main:
+  - componentName: Dashboard
+    # fields:
+    #   heading: Using Login

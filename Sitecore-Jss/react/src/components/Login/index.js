@@ -9,7 +9,9 @@ const Login = (props) => (
       <div className="login-signup">
         <div className="logo">
           <div className="logo-image">
-            <img src={logo} className="filter-blue" alt="Logo" />
+            <Link to="/" className="ps-0">
+              <img src={logo} className="filter-blue" alt="logo" />
+            </Link>
           </div>
           <h1>CRM</h1>
         </div>
@@ -42,21 +44,19 @@ const Login = (props) => (
             </div>
             <div>
               <span>
-                <Link to="/forgotpassword" className="forgot-password">
+                <Link to="/forgotpassword" className="forgot-password ps-0">
                   Forgot password?
                 </Link>
-                {/* <a className="forgot-password" href="#">
-                Forgot password?
-                </a> */}
               </span>
               <br />
             </div>
           </div>
-          <button>Sign In</button>
+          <Link to="/dashboard" className="ps-0">
+            <button>Sign In</button>
+          </Link>
           <p>
             Dont have an account?
             <Link to="/registration">Sign UP</Link>
-            {/* <a href="#">Sign Up</a> */}
           </p>
         </form>
       </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text } from '@sitecore-jss/sitecore-jss-react';
+import { Link } from 'react-router-dom';
 import logo from './../../assets/img/logo.svg';
 
 const Registration = (props) => (
@@ -8,7 +9,9 @@ const Registration = (props) => (
       <div className="login-signup">
         <div className="logo">
           <div className="logo-image">
-            <img src={logo} className="filter-blue" alt="" />
+            <Link to="/" className="ps-0">
+              <img src={logo} className="filter-blue" alt="logo" />
+            </Link>
           </div>
           <h1>CRM</h1>
         </div>
@@ -42,9 +45,14 @@ const Registration = (props) => (
             />
             <label className="pt-2">Confirm Password</label>
           </div>
-          <button>Sign Up</button>
+          <Link to="/" className="ps-0">
+            <button>Sign Up</button>
+          </Link>
           <p>
-            Already registered? <a href="#">Sign In</a>
+            Already registered?{' '}
+            <Link to="/" className="ps-0">
+              Sign In
+            </Link>
           </p>
         </form>
       </div>

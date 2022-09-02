@@ -10,7 +10,9 @@ const Dashboard = (props) => (
     <nav className="border-end">
       <div className="logo">
         <div className="logo-image">
-          <img src={logo} className="filter-blue" alt="logo" />
+          <Link to="/dashboard" className="ps-0">
+            <img src={logo} className="filter-blue" alt="logo" />
+          </Link>
         </div>
 
         <span className="logo_name">CRM</span>
@@ -19,17 +21,16 @@ const Dashboard = (props) => (
       <div className="nav-wrap">
         <ul className="nav-items list-unstyled">
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <Link to="/dashboard" className="ps-0 nav-link">
               <i className="uil uil-chart-pie-alt nav-icon"></i>
               <span className="nav-text">Dahsboard</span>
-            </a>
+            </Link>
           </li>
-
           <li className="nav-item">
-            <a className="nav-link" href="./inbox.html">
-              <i className="uil uil-envelope nav-icon"></i>
+            <Link to="/inbox" className="ps-0 nav-link">
+              <i className="uil uil-chart-pie-alt nav-icon"></i>
               <span className="nav-text">Inbox</span>
-            </a>
+            </Link>
           </li>
         </ul>
         <div className="nav-documentation">

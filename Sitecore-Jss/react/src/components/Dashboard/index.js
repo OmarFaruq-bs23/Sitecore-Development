@@ -28,7 +28,7 @@ const Dashboard = (props) => (
           </li>
           <li className="nav-item">
             <Link to="/inbox" className="ps-0 nav-link">
-              <i className="uil uil-chart-pie-alt nav-icon"></i>
+              <i className="uil uil-envelope nav-icon"></i>
               <span className="nav-text">Inbox</span>
             </Link>
           </li>

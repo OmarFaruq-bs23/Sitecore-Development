@@ -5,7 +5,7 @@ import logo from './../../assets/img/logo.svg';
 
 const Login = (props) => (
   <div>
-    <div id="login-signup-page">
+    <div className="login-signup-page">
       <div className="login-signup">
         <div className="logo">
           <div className="logo-image">

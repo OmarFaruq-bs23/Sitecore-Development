@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "open sans";
+}
+.authentication {
+  // background: #061d49 url("./../../img/bg-overlay.png") no-repeat ;
+  background: #061d49;
+  background-size: cover;
+}
+
+.login-signup {
+  .logo {
+    img {
+      max-height: 45px;
+      max-width: 45px;
+
+      @media (max-width: 575px) {
+        max-height: 1.9rem;
+        max-width: 2.2rem;
+      }
+
+      .filter-blue {
+        filter: invert(8%) sepia(60%) saturate(4390%) hue-rotate(225deg)
+          brightness(79%) contrast(102%);
+      }
+    }
+    h1 {
+      font-weight: 800;
+      color: $color-primary;
+    }
+  }
+
+  h2, h5, form, a{ color: $color-primary; }
+
+  .form-floating {
+    input {
+      border: none;
+      margin-bottom: 1.8rem;
+    }
+    label { transition: all 0.3s ease; }
+  }
+  // .remember-container {
+  //   #radio {
+  //     accent-color: $color-primary;
+  //   }
+  // }
+  button { background-color: $color-primary; }
+}

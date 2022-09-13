@@ -9,24 +9,27 @@ a[target='_blank']:after {
 */
 .scChromeData, .scpm { display: none !important; }
 
-/*
-  Style for default content block
-*/
-.contentTitle {
-  font-size: 3.5rem;
-  font-weight: 300;
-  line-height: 1.2;
-}
+//global
+@import "scss/base/variables";
+@import "scss/base/mixins";
+@import "scss/base/global";
 
+//vendors
+// @import "scss/vendors/bootstrap.scss";
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "open sans";
-}
+//components
+@import "scss/components/buttons";
+@import "scss/components/forms";
+@import "scss/components/tables";
+@import "scss/components/dashboard";
+@import "scss/components/inbox";
 
-@import "./scss/login.scss";
+//layout
+@import "scss/layout/header";
+@import "scss/layout/nav";
+@import "scss/layout/sidebar";
+@import "scss/layout/footer";
 
-@import "./scss/dashboard.scss";
+//pages
+@import "scss/pages/generic";
+@import "scss/pages/home";

@@ -7,42 +7,51 @@ import profile from './../../assets/img/profile.png';
 
 const Dashboard = (props) => (
   <div>
-    <nav className="border-end">
-      <div className="logo">
-        <div className="logo-image">
+    <nav
+      className="position-fixed top-0 h-100 start-0 border-end bg-white p-3"
+      style={{ width: '250px' }}
+    >
+      <div className="logo d-flex align-middle pb-2">
+        <div className="logo-image d-flex justify-content-center" style={{ minWidth: '45px' }}>
           <Link to="/dashboard" className="ps-0">
-            <img src={logo} className="filter-blue" alt="logo" />
+            <img src={logo} className="filter-blue" style={{ width: '0px' }} alt="logo" />
           </Link>
         </div>
-
-        <span className="logo_name">CRM</span>
+        <span className="logo_name display-6 fw-bolder ml-3">CRM</span>
       </div>
-
-      <div className="nav-wrap">
+      <div className="nav-wrap mt-4 d-flex flex-column justify-content-between">
         <ul className="nav-items list-unstyled">
           <li className="nav-item">
-            <Link to="/dashboard" className="ps-0 nav-link">
-              <i className="uil uil-chart-pie-alt nav-icon"></i>
-              <span className="nav-text">Dahsboard</span>
+            <Link
+              to="/dashboard"
+              className="nav-link d-flex align-items-center position-relative text-decoration-none"
+              style={{ height: '50px' }}
+            >
+              <i className="uil uil-chart-pie-alt nav-icon d-flex align-items-center justify-content-center h-100 fs-5"></i>
+              <span className="nav-text fs-5 fw-normal">Dahsboard</span>
             </Link>
           </li>
+
           <li className="nav-item">
-            <Link to="/inbox" className="ps-0 nav-link">
-              <i className="uil uil-envelope nav-icon"></i>
-              <span className="nav-text">Inbox</span>
+            <Link
+              to="/inbox"
+              className="nav-link d-flex align-items-center position-relative text-decoration-none"
+              style={{ height: '50px' }}
+            >
+              <i className="uil uil-chart-pie-alt nav-icon d-flex align-items-center justify-content-center h-100 fs-5"></i>
+              <span className="nav-text fs-5 fw-normal">Inbox</span>
             </Link>
           </li>
         </ul>
-        <div className="nav-documentation">
-          <i className="uil uil-question-circle"></i>
-          <h6>Need Help?</h6>
+        <div className="nav-documentation rounded p-3 text-white">
+          <i className="uil uil-question-circle fs-1"></i>
+          <h5 className="h5 pt-2">Need Help?</h5>
           <p>Please check our docs</p>
-          <button>Document</button>
+          <button className="w-100 mt-2 rounded fs-6 border-0 fw-bold">Document</button>
         </div>
       </div>
     </nav>
-
-    <main className="dashboard">
+    <main className="dashboard position-relative min-vh-100">
       <header className="header-container shadow-sm">
         <div className="search-box">
           <i className="uil uil-search"></i>
@@ -56,34 +65,32 @@ const Dashboard = (props) => (
             <p className="profile-role">Super Admin</p>
           </div>
         </div>
-
-        <img className="profile-img" src={profile} alt="" />
+        <img className="profile-img" src={profile} alt="profile" />
       </header>
-
-      <section className="dash-content">
-        <div className="dash-chart">
-          <img src={chart} height="100%" width="100%" alt="" />
+      <section className="dash-content pt-5">
+        <div className="dash-chart p-5">
+          <img src={chart} height="100%" width="100%" alt="chart" />
         </div>
         <div className="overview">
           <div className="title">
-            <span className="text">Analytics Overview</span>
+            <span className="text px-5 fs-3 fw-bolder">Analytics Overview</span>
           </div>
 
-          <div className="boxes">
-            <div className="box box1">
-              <i className="uil uil-user box-icon"></i>
-              <span className="box-number">4.5k</span>
-              <span className="box-text">Total Customers</span>
+          <div className="boxes p-5 d-flex align-items-center justify-content-between flex-wrap">
+            <div className="box d-flex flex-column align-items-center rounded-4 shadow-sm p-4 bg-white">
+              <i className="uil uil-user box-icon fs-2"></i>
+              <span className="box-number fs-1">4.5k</span>
+              <span className="box-text fs-5 fw-semibold">Total Customers</span>
             </div>
-            <div className="box box2">
-              <i className="uil uil-bullseye box-icon"></i>
-              <span className="box-number">3.5k</span>
-              <span className="box-text">Total Prospects</span>
+            <div className="box d-flex flex-column align-items-center rounded-4 shadow-sm p-4 bg-white">
+              <i className="uil uil-bullseye box-icon fs-2"></i>
+              <span className="box-number fs-1">3.5k</span>
+              <span className="box-text fs-5 fw-semibold">Total Prospects</span>
             </div>
-            <div className="box box3">
-              <i className="uil uil-users-alt box-icon"></i>
-              <span className="box-number">38.20</span>
-              <span className="box-text">Total Lead</span>
+            <div className="box d-flex flex-column align-items-center rounded-4 shadow-sm p-4 bg-white">
+              <i className="uil uil-users-alt box-icon fs-2"></i>
+              <span className="box-number fs-1">38.20</span>
+              <span className="box-text fs-5 fw-semibold">Total Lead</span>
             </div>
           </div>
         </div>

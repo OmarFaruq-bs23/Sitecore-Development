@@ -14,7 +14,7 @@ const Inbox = (props) => (
         <div className="logo d-flex align-middle pb-2">
           <div className="logo-image d-flex justify-content-center" style={{ minWidth: '45px' }}>
             <Link to="/dashboard" className="ps-0">
-              <img src={logo} className="filter-blue" style={{ width: '0px' }} alt="logo" />
+              <img src={logo} className="filter-blue" style={{ width: '40px' }} alt="logo" />
             </Link>
           </div>
           <span className="logo_name display-6 fw-bolder ml-3">CRM</span>
@@ -38,7 +38,7 @@ const Inbox = (props) => (
                 className="nav-link d-flex align-items-center position-relative text-decoration-none"
                 style={{ height: '50px' }}
               >
-                <i className="uil uil-chart-pie-alt nav-icon d-flex align-items-center justify-content-center h-100 fs-5"></i>
+                <i className="uil uil-envelope nav-icon d-flex align-items-center justify-content-center h-100 fs-5"></i>
                 <span className="nav-text fs-5 fw-normal">Inbox</span>
               </Link>
             </li>

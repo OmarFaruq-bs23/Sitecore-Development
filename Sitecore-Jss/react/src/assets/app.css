@@ -17,7 +17,7 @@ a[target='_blank']:after {
   font-family: "open sans"; }
 
 .authentication {
-  background: #061d49;
+  background: #061d49 url("../assets/img/bg-overlay.png") no-repeat;
   background-size: cover; }
 
 .login-signup .logo img {

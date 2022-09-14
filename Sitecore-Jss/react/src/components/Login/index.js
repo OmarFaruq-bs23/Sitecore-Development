@@ -5,78 +5,83 @@ import logo from './../../assets/img/logo.svg';
 
 const Login = (props) => (
   <div>
-    <div className="authentication container-fluid ">
-      <div className="row vh-100 align-items-center ">
-        <div className="col-12 col-sm-12 col-md-9 col-lg-6 col-xl-5 mx-auto">
-          <div className="login-signup rounded-5 py-5 px-3 px-sm-5 shadow-lg bg-white">
-            <div className="logo d-flex">
-              <Link to="/" className="ps-0">
-                <img src={logo} className="filter-blue" alt="logo" />
-              </Link>
-              <h1 className="fs-1">CRM</h1>
-            </div>
-            <h2 className="fs-3 fw-bold">Sign In</h2>
-            <h5 className="fs-6 fw-normal pb-4">Sign in to continue our application</h5>
-            <form>
-              <div className="form-floating">
-                <input
-                  type="email"
-                  className="form-control shadow-none px-1 w-100 border-bottom rounded-0"
-                  id="floatingInput"
-                  placeholder="name@example.com"
-                  autoFocus
-                />
-                <label className="pt-2 ps-0 fs-6 fw-bold pe-none" htmlFor="floatingInput">
-                  Email address
-                </label>
-              </div>
-              <div className="form-floating">
-                <input
-                  type="password"
-                  className="form-control shadow-none px-1 w-100 border-bottom rounded-0"
-                  id="floatingPassword"
-                  placeholder="Password"
-                />
-                <label className="pt-2 ps-0 fs-6 fw-bold pe-none" htmlFor="floatingPassword">
-                  Password
-                </label>
-              </div>
-              <div className="remember-container d-flex justify-content-between align-items-center">
-                <div className="form-check">
-                  <input
-                    className="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="flexCheckDefault"
-                  />
-                  <label className="form-check-label" htmlFor="flexCheckDefault">
-                    Remember me
-                  </label>
-                </div>
-                <div>
-                  <span>
-                    <Link
-                      to="/forgotpassword"
-                      className="text-decoration-none ps-0 ps-sm-2 text-secondary"
-                    >
-                      Forgot password?
-                    </Link>
-                  </span>
-                  <br />
-                </div>
-              </div>
-              <Link to="/dashboard" className="ps-0">
-                <button className="w-100 text-white rounded-2 my-3 py-2">Sign In</button>
-              </Link>
-              <p>
-                Dont have an account?{' '}
-                <Link className="text-decoration-none ps-2 fw-bold" to="/registration">
-                  Sign UP
-                </Link>
-              </p>
-            </form>
-          </div>
+    <div className="authentication bg-[#061d49] w-full h-screen flex items-center text-blue font-sans">
+      <div className="mx-auto bg-white p-10 space-y-3 w-[95%] sm:w-[80%] md:w-[42.5%] rounded-lg">
+        <div className="flex items-center gap-2">
+          <Link to="/" className="ps-0">
+            <img
+              src={logo}
+              className="filter-blue max-h-14 max-w-12 sm:max-h-12 sm:max-w-[3rem]"
+              alt="logo"
+            />
+          </Link>
+          <h1 className="text-5xl font-extrabold">CRM</h1>
         </div>
+        <h2 className="text-3xl font-bold">Sign In</h2>
+        <h5 className="text-base pb-6">Sign in to continue our application</h5>
+        <form className="mt-12">
+          <div className="relative">
+            <input
+              id="email"
+              name="email"
+              type="text"
+              className="peer h-10 w-full border-b-[1px] border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-gray-600"
+              placeholder="john@doe.com"
+            />
+            <label
+              htmlFor="email"
+              className="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-blue peer-placeholder-shown:font-bold peer-placeholder-shown:-top-1 peer-focus:-top-5 peer-focus:text-blue/60 peer-focus:text-sm"
+            >
+              Email address
+            </label>
+          </div>
+          <div className="mt-10 relative">
+            <input
+              id="password"
+              name="password"
+              type="password"
+              className="peer h-10 w-full border-b-[1px] border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-gray-600"
+              placeholder="john@doe.com"
+            />
+            <label
+              htmlFor="password"
+              className="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-blue peer-placeholder-shown:font-bold peer-placeholder-shown:-top-1 peer-focus:-top-5 peer-focus:text-blue/60 peer-focus:text-sm"
+            >
+              Password
+            </label>
+          </div>
+          <div className="flex justify-between items-center">
+            <div className="my-10 text-sm sm:text-[1.05rem] flex items-center gap-2">
+              <input
+                className="checked:bg-blue h-4 w-4 rounded-full shadow "
+                type="checkbox"
+                id="flexCheckDefault"
+              />
+              <label className="" htmlFor="flexCheckDefault">
+                Remember me
+              </label>
+            </div>
+            <div className="my-10">
+              <span>
+                <Link to="/forgotpassword" className="opacity-70 text-sm sm:text-[1.05rem]">
+                  Forgot password?
+                </Link>
+              </span>
+            </div>
+          </div>
+          <Link to="/dashboard">
+            <button className="px-4 py-3 rounded bg-blue duration-500 text-white font-semibold text-center block w-full">
+              Sign In
+            </button>
+          </Link>
+
+          <p className="mt-3 text-base">
+            Dont have an account?
+            <Link className="font-bold pl-2" to="/registration">
+              Sign UP
+            </Link>
+          </p>
+        </form>
       </div>
     </div>
   </div>

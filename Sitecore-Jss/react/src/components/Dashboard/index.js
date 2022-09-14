@@ -6,96 +6,113 @@ import chart from './../../assets/img/chart.png';
 import profile from './../../assets/img/profile.png';
 
 const Dashboard = (props) => (
-  <div>
-    <nav
-      className="position-fixed top-0 h-100 start-0 border-end bg-white p-3"
-      style={{ width: '250px' }}
-    >
-      <div className="logo d-flex align-middle pb-2">
-        <div className="logo-image d-flex justify-content-center" style={{ minWidth: '45px' }}>
-          <Link to="/dashboard" className="ps-0">
-            <img src={logo} className="filter-blue" style={{ width: '40px' }} alt="logo" />
-          </Link>
-        </div>
-        <span className="logo_name display-6 fw-bolder ml-3">CRM</span>
+  <div className="h-screen w-full flex justify-center text-blue bg-gray-100">
+    <div className="w-[17%] border-r-2 border-gray-100 px-2 bg-white">
+      <div className="flex pl-0 lg:pl-6 h-[13vh] border-b-2 border-gray-100 items-center justify-center lg:justify-start gap-1">
+        <Link to="/dashboard" className="ps-0">
+          <img
+            src={logo}
+            className="filter-blue h-12 xl:h-14"
+            style={{ width: '40px' }}
+            alt="logo"
+          />
+        </Link>
+        <h1 className="text-4xl xl:text-5xl font-extrabold hidden lg:block">CRM</h1>
       </div>
-      <div className="nav-wrap mt-4 d-flex flex-column justify-content-between">
-        <ul className="nav-items list-unstyled">
-          <li className="nav-item">
-            <Link
-              to="/dashboard"
-              className="nav-link d-flex align-items-center position-relative text-decoration-none"
-              style={{ height: '50px' }}
-            >
-              <i className="uil uil-chart-pie-alt nav-icon d-flex align-items-center justify-content-center h-100 fs-5"></i>
-              <span className="nav-text fs-5 fw-normal">Dahsboard</span>
+      <div className="flex flex-col justify-end h-[87vh]">
+        <div className="h-1/2">
+          <div
+            className="py-8 pl-0 lg:pl-6 text-gray-500 hover:text-gray-700 flex items-center justify-center lg:justify-start gap-4"
+            title="Dashboard"
+          >
+            <Link to="/dashboard">
+              <h1 className="text-sm md:text-xl">Dashboard</h1>
             </Link>
-          </li>
+          </div>
 
-          <li className="nav-item">
+          <div
+            className="pl-0 lg:pl-6 text-gray-500 hover:text-gray-700 flex items-center justify-center lg:justify-start gap-4"
+            title="Inbox"
+          >
             <Link
               to="/inbox"
               className="nav-link d-flex align-items-center position-relative text-decoration-none"
               style={{ height: '50px' }}
             >
-              <i className="uil uil-envelope nav-icon d-flex align-items-center justify-content-center h-100 fs-5"></i>
-              <span className="nav-text fs-5 fw-normal">Inbox</span>
+              <h1 className="text-sm md:text-xl">Inbox</h1>
             </Link>
-          </li>
-        </ul>
-        <div className="nav-documentation rounded p-3 text-white">
-          <i className="uil uil-question-circle fs-1"></i>
-          <h5 className="h5 pt-2">Need Help?</h5>
-          <p>Please check our docs</p>
-          <button className="w-100 mt-2 rounded fs-6 border-0 fw-bold">Document</button>
+          </div>
+        </div>
+        <div className="flex flex-col h-1/2 justify-end pb-3">
+          <div className="bg-blue hidden xl:flex flex-col p-5 text-white rounded-lg gap-3 mx-3 ">
+            <i className="uil uil-question-circle text-4xl"></i>
+            <h5 className="text-3xl font-semibold">Need Help?</h5>
+            <p>Please check our docs</p>
+            <button className="bg-white w-100 text-blue font-bold mt-4 py-2 rounded-md">
+              Document
+            </button>
+          </div>
         </div>
       </div>
-    </nav>
-    <main className="dashboard position-relative min-vh-100">
-      <header className="header-container shadow-sm">
-        <div className="search-box">
-          <i className="uil uil-search"></i>
-          <input type="text" placeholder="Search for a contact" />
+    </div>
+
+    <div className="w-[83%]">
+      <div className="logo flex h-[13vh] border-b-2 border-gray-100 items-center justify-end sm:justify-between gap-1 px-4 md:px-10 bg-white">
+        <div className="space-x-4 hidden sm:block">
+          <i className="text-2xl text-gray-500 uil uil-search"></i>
+          <input type="text" placeholder="Search for a contact" className="focus:outline-none" />
+        </div>
+        <div className="flex items-center justify-between text-gray-500 gap-3 md:gap-4">
+          <i className="text-2xl md:text-4xl first-letter:uil uil-bell profile-notification"></i>
+          <div className="text-center">
+            <p className="text-black font-bold text-sm md:text-md">Hello, Franklin</p>
+            <p className="text-xs">Super Admin</p>
+          </div>
+          <img src={profile} alt="admin" className="rounded-full h-10" />
+        </div>
+      </div>
+
+      <div className="h-[87vh]">
+        <div className="px-4 md:px-10 pt-6 h-[60%]">
+          <div className="w-full h-[90%] md:h-full bg-white">
+            <img
+              src={chart}
+              height="100%"
+              width="100%"
+              alt="chart"
+              className="w-full lg:w-[60%] h-full mx-auto"
+            />
+          </div>
         </div>
 
-        <div className="profile-container">
-          <i className="uil uil-bell profile-notification"></i>
-          <div className="profile-info">
-            <span className="profile-name">Hello,Franklin</span>
-            <p className="profile-role">Super Admin</p>
-          </div>
-        </div>
-        <img className="profile-img" src={profile} alt="profile" />
-      </header>
-      <section className="dash-content pt-5">
-        <div className="dash-chart p-5">
-          <img src={chart} height="100%" width="100%" alt="chart" />
-        </div>
-        <div className="overview">
-          <div className="title">
-            <span className="text px-5 fs-3 fw-bolder">Analytics Overview</span>
-          </div>
-
-          <div className="boxes p-5 d-flex align-items-center justify-content-between flex-wrap">
-            <div className="box d-flex flex-column align-items-center rounded-4 shadow-sm p-4 bg-white">
-              <i className="uil uil-user box-icon fs-2"></i>
-              <span className="box-number fs-1">4.5k</span>
-              <span className="box-text fs-5 fw-semibold">Total Customers</span>
+        <div className="px-4 md:px-10 bg-gray-100">
+          <p className="text-2xl font-bold py-1 md:py-6">Analytics Overview</p>
+          <div className="flex flex-col sm:flex-row justify-between ">
+            <div className="flex flex-col items-center justify-center bg-white rounded-md w-full sm:w-[30%] py-6 gap-2">
+              <i className="uil uil-user box-icon fs-2 text-2xl md:text-4xl"></i>
+              <span className="box-number fs-1 text-2xl md:text-4xl">4.5k</span>
+              <span className="box-text fs-5 fw-semibold text-md md:text-xl font-bold">
+                Total Customers
+              </span>
             </div>
-            <div className="box d-flex flex-column align-items-center rounded-4 shadow-sm p-4 bg-white">
-              <i className="uil uil-bullseye box-icon fs-2"></i>
-              <span className="box-number fs-1">3.5k</span>
-              <span className="box-text fs-5 fw-semibold">Total Prospects</span>
+            <div className="flex flex-col items-center justify-center bg-white rounded-md  w-full sm:w-[30%] py-6 gap-2">
+              <i className="uil uil-bullseye box-icon fs-2 text-2xl md:text-4xl"></i>
+              <span className="box-number fs-1 text-2xl md:text-4xl">3.5k</span>
+              <span className="box-text fs-5 fw-semibold text-md md:text-xl font-bold">
+                Total Prospects
+              </span>
             </div>
-            <div className="box d-flex flex-column align-items-center rounded-4 shadow-sm p-4 bg-white">
-              <i className="uil uil-users-alt box-icon fs-2"></i>
-              <span className="box-number fs-1">38.20</span>
-              <span className="box-text fs-5 fw-semibold">Total Lead</span>
+            <div className="flex flex-col items-center justify-center bg-white rounded-md  w-full sm:w-[30%] py-6 gap-2">
+              <i className="uil uil-users-alt box-icon fs-2 text-2xl md:text-4xl"></i>
+              <span className="box-number fs-1 text-2xl md:text-4xl">38.20</span>
+              <span className="box-text fs-5 fw-semibold text-md md:text-xl font-bold">
+                Total Lead
+              </span>
             </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </div>
   </div>
 );
 

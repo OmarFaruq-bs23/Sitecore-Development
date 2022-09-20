@@ -6,7 +6,7 @@ import logo from './../../assets/img/logo.svg';
 const Login = (props) => (
   <div>
     <div className="authentication bg-[#061d49] w-full h-screen flex items-center text-blue font-sans">
-      <div className="mx-auto bg-white p-10 space-y-3 w-[95%] sm:w-[80%] md:w-[42.5%] rounded-lg">
+      <div className="mx-auto bg-white p-10 space-y-3 w-[95%] sm:w-[80%] md:w-[60%] lg:w-[50%] xl:w-[38%] 2xl:w-[33%] rounded-lg">
         <div className="flex items-center gap-2">
           <Link to="/" className="ps-0">
             <img

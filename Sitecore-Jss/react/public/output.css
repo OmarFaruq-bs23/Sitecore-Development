@@ -549,6 +549,21 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.authentication {
+  --tw-bg-opacity: 1;
+  background-color: rgb(6 29 73 / var(--tw-bg-opacity));
+  background-image: url('images/bg-overlay.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.filter-blue {
+  -webkit-filter: invert(8%) sepia(60%) saturate(4390%) hue-rotate(225deg)
+          brightness(79%) contrast(102%);
+          filter: invert(8%) sepia(60%) saturate(4390%) hue-rotate(225deg)
+          brightness(79%) contrast(102%);
+}
+
 .static {
   position: static;
 }
@@ -840,6 +855,11 @@ video {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
+.bg-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(6 29 73 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#061d49\] {
   --tw-bg-opacity: 1;
   background-color: rgb(6 29 73 / var(--tw-bg-opacity));
@@ -993,6 +1013,11 @@ video {
   font-weight: 200;
 }
 
+.text-blue {
+  --tw-text-opacity: 1;
+  color: rgb(6 29 73 / var(--tw-text-opacity));
+}
+
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
@@ -1051,6 +1076,11 @@ video {
   transition-duration: 500ms;
 }
 
+.checked\:bg-blue:checked {
+  --tw-bg-opacity: 1;
+  background-color: rgb(6 29 73 / var(--tw-bg-opacity));
+}
+
 .hover\:text-gray-700:hover {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
@@ -1079,6 +1109,11 @@ video {
   font-weight: 700;
 }
 
+.peer:placeholder-shown ~ .peer-placeholder-shown\:text-blue {
+  --tw-text-opacity: 1;
+  color: rgb(6 29 73 / var(--tw-text-opacity));
+}
+
 .peer:focus ~ .peer-focus\:-top-5 {
   top: -1.25rem;
 }
@@ -1086,6 +1121,10 @@ video {
 .peer:focus ~ .peer-focus\:text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.peer:focus ~ .peer-focus\:text-blue\/60 {
+  color: rgb(6 29 73 / 0.6);
 }
 
 @media (min-width: 640px) {
@@ -1145,6 +1184,10 @@ video {
 
   .md\:w-\[15\%\] {
     width: 15%;
+  }
+
+  .md\:w-\[60\%\] {
+    width: 60%;
   }
 
   .md\:w-\[42\.5\%\] {
@@ -1217,6 +1260,10 @@ video {
     width: 78%;
   }
 
+  .lg\:w-\[50\%\] {
+    width: 50%;
+  }
+
   .lg\:justify-start {
     justify-content: flex-start;
   }
@@ -1239,8 +1286,18 @@ video {
     height: 3.5rem;
   }
 
+  .xl\:w-\[38\%\] {
+    width: 38%;
+  }
+
   .xl\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:w-\[33\%\] {
+    width: 33%;
   }
 }
